@@ -293,24 +293,6 @@
     margin-bottom: 100%;
   }
 
-  .back-to-top {
-    white-space: nowrap;
-    background-color: transparent;
-    border: 5px solid;
-    border-color: #ffb03b;
-    border-radius: 20px;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: flexbox;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-    opacity: 0.8;
-    color: rgb(26, 26, 26);
-    width: 100%;
-  }
-
     .text {
     top: 100px;
   }
