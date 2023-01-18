@@ -168,8 +168,8 @@
     color: #999;
     text-align: center;
   }
-  #reservations-btn-2, #reservations-btn-3, #menu-btn, #menu-btn-1, #menu-btn-2, #menu-btn-3 {
-    white-space: nowrap;
+  #reservations-btn-1, #reservations-btn-2, #reservations-btn-3, #reservations-btn-4, #menu-btn, #menu-btn-1, #menu-btn-2, #menu-btn-3 {
+    justify-content: center;
     background-color: transparent;
     border: 5px solid;
     border-color: #ffb03b;
@@ -177,13 +177,14 @@
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flexbox;
     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
     opacity: 0.8;
     color: white;
-    width: 80%;
+    width: 45%;
+    height: 50%;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -203,7 +204,7 @@
     margin: 4px 2px;
     cursor: pointer;
     opacity: 0.8;
-    color: rgb(85, 85, 85);
+    color: rgb(26, 26, 26);
     width: 100%;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
