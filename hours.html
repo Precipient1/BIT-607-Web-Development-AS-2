@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haukai Restaurant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="style.css">
+  </head>
+  <body class="hours-page">
+    <header class="header bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="#">Haukai</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" >
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reservations.html">Reservations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hours.html">Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    <div class="hours-page text-center">
+        <h1>Our Hours</h1>
+        <p>Please feel free to book a reservation with us. It will be our pleasure to serve you.</p>
+        <ul>
+          <li>Wednesday: 4:00 PM - 9:00 PM</li>
+          <li>Thursday: 4:00 PM - 9:00 PM</li>
+          <li>Friday: 4:00 PM - 10:00 PM</li>
+          <li>Saturday: 4:00 PM - 10:00 PM</li>
+          <li>Sunday: 4:00 PM - 9:00 PM</li>
+        </ul>
+        <p class="p1">*Note: Hours may vary on holidays</p>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3>Haukai Restaurant</h3>
+              <p>1 Island Street</p>
+              <p>Keri Keri, Bay of Islands, New Zealand</p>
+              <p>09 401 4019</p>
+            </div>
+            <div class="col">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><a href="mailto:haukairestaurant@gmail.com">haukairestaurant@gmail.com</a></li>
+                <li>+64 09 401 4019</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Copyright © 2022 Haukai Restaurant</p>
+          </div>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.hours-page li').hover(function(){
+            $(this).css('background-color', '#f2f2f2');
+          }, function(){
+            $(this).css('background-color', '#fff');
+          });
+        });
+      </script>
+    </body>
+</html>
