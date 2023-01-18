@@ -1,6 +1,10 @@
 // Get the carousel element
 const carousel = document.getElementById("bg-carousel");
 
+$(document).ready(function(){
+    $("#bg-carousel").carousel();
+  });
+
 // Next button
 const nextButton = document.getElementById("next-button");
 nextButton.addEventListener("click", () => {
@@ -23,6 +27,18 @@ pauseButton.addEventListener("click", () => {
 const playButton = document.getElementById("play-button");
 playButton.addEventListener("click", () => {
   carousel.carousel("cycle");
+});
+
+document.getElementById("back-to-top").addEventListener("click", function () {
+    window.scrollTo(0, 0);
+});
+
+document.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      document.getElementById("back-to-top").classList.add("show");
+    } else {
+      document.getElementById("back-to-top").classList.remove("show");
+    }
 });
 
 // form validation
