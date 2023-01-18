@@ -12,18 +12,86 @@
     color: #333333;
     background-color: #f5f5f5;
   }
-  @media (max-width: 600px) {
-    body {
-        background-size: auto;
+
+  @media (min-width: 768px) {
+    /* Styles for the header */
+    .header {
+      position: flex;
+      color: #ffb03b;
+      z-index: -1;
+      padding: 0.5em;
+      font-family: "Poppins", sans-serif;
+      font-size: 20px;
+    }
+
+    /* Styles for the navbar */
+    .navbar {
+      position: relative;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* Styles for the menu page */
+    .menu-item {
+      margin-bottom: 30px;
+    }
+
+    /* Styles for the hours page */
+    #calendar {
+      width: 100%;
+      height: 600px;
+    }
+    .container {
+      display: flexbox;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
     }
   }
 
-  /* Styles for screens with a width of 768px or more */
-  @media (min-width: 768px) {
+  /* Styles for screens with a width of 600px or less */
+  @media (max-width: 600px) {
+    /* Styles for the body */
     body {
-        background-size: cover;
+      background-size: auto;
     }
-  }
+
+    /* Styles for the menu page */
+    .menu-item img {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    /* Styles for the contact page */
+    #map {
+      position: auto;
+      height: auto;
+      max-width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 400px;
+      right: 0;
+    }
+
+    /* Styles for the hours page */
+    #calendar {
+      width: 100%;
+      height: 600px;
+    }
+    .container {
+      display: flexbox;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      grid-template-columns:0;
+    }
 
   a {
     text-decoration: none;
@@ -329,3 +397,4 @@
     margin-bottom: 2em;
   }
 
+  }
