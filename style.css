@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Global styles */
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #333333;
+    background-color: #f5f5f5;
+  }
+  @media (max-width: 600px) {
+    body {
+        background-size: auto;
+    }
+  }
+
+  /* Styles for screens with a width of 768px or more */
+  @media (min-width: 768px) {
+    body {
+        background-size: cover;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffb03b;}
+
+  a:hover {
+    color: #0078d7;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Satisfy", cursive;
+  }
+
+  .header {
+    position: flex;
+   color: #ffb03b;
+   z-index: -1;
+   padding: 0.5em;
+   font-family: "Poppins", sans-serif;
+   font-size: 20px;
+  }
+
+  .navbar-brand {
+    font-family: 'Satisfy', cursive;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+  }
+
+  .navbar {
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .nav-link {
+    position: relative;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  /* Home page styles */
+  container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0);
+    padding-left: calc(var(--bs-gutter-x) * 0);
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Reservation page styles */
+  form {
+    margin-top: 50px;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  /* Menu page styles */
+  .menu-item {
+    margin-bottom: 30px;
+  }
+
+  .menu-item img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  /* Contact page styles */
+  #map {
+    position: auto;
+    height: auto;
+    max-width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 400px;
+    right: 0;
+  }
+
+  /* Hours page styles */
+  #calendar {
+    width: 100%;
+    height: 600px;
+  }
+  .container {
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  /* Styles for the hours-page container */
+  .hours-page {
+    padding: 20px;
+  }
+
+  /* Styles for the heading */
+  .hours-page h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Styles for the unordered list */
+  .hours-page ul {
+    list-style-type: none; /* remove bullet points */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Styles for the list items */
+  .hours-page li {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  /* Styles for the note */
+  .hours-page p {
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+  }
+  #reservations-btn-2, #reservations-btn-3, #menu-btn, #menu-btn-1, #menu-btn-2, #menu-btn-3 {
+    white-space: nowrap;
+    background-color: transparent;
+    border: 5px solid;
+    border-color: #ffb03b;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0.8;
+    color: white;
+    width: 80%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  #reservations-btn {
+    white-space: nowrap;
+    background-color: transparent;
+    border: 5px solid;
+    border-color: #ffb03b;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0.8;
+    color: rgb(85, 85, 85);
+    width: 100%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  @media (min-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 36px;
+    }
+    .carousel-caption p {
+        font-size: 24px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .carousel-caption h1 {
+        font-size: 28px;
+    }
+    .carousel-caption p {
+        font-size: 18px;
+    }
+    .carousel-caption-container {
+        padding: 10px;
+    }
+  }
+
+  .transparent-btn:hover, #menu-btn:hover {
+    color: #ff6f61; /* Hover color */
+  }
+  .carousel-item {
+    margin: auto;
+    padding: auto;
+  }
+
+  .carousel-inner {
+    margin: auto;
+    padding: auto;
+  }
+  .carousel-caption {
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+     position: relative;
+     font-size: 125%;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     padding: 15px;
+     background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    margin-bottom:5em;
+  }
+  .caption-heading {
+    font-size: 2.4em;
+    padding-bottom: 5px;
+  }
+
+  .caption-paragraph {
+    font-size: 1em;
+    padding-bottom: 5px;
+  }
+
+  .p1 {
+    margin-top: 40px;
+  }
+
+  .leftcolumn {
+    float: left;
+    width: 100%;
+    background-color: #616060;
+    text-align: center;
+  }
+
+  /* Right column */
+  .rightcolumn {
+    float: right;
+    width: 50%;
+    background-color: #ffb03b;
+    padding-left: 20px;
+    color: #fff;
+  }
+  card {
+    background-color: #ffb03b;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100%;
+  }
+
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #ffb03b;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  .text {
+    top: 100px;
+  }
+
+  .menu-page {
+    background: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Menu.jpg") no-repeat center center/cover;
+    background-size: cover;
+  }
+
+  .reservations-page {
+    background: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Reservations.jpg") no-repeat center center/cover;
+    background-size: cover;
+  }
+
+  .hours-page {
+    background: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Hours.jpg") no-repeat center center/cover;
+    background-size: cover;
+  }
+
+  .contact-page {
+    background: url("C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\Contact.jpg") no-repeat center center/cover;
+    background-size: cover;
+  }
+
+  /* Footer */
+  .footer {
+    justify-content: space-between;
+    color: #ffb03b;
+    padding: 1em;
+    padding: 20px;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .footer a {
+    color: #ffff;
+  }

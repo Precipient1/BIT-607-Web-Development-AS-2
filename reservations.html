@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haukai Restaurant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="style.css">
+  </head>
+  <body class="reservations-page">
+    <header class="header bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="#">Haukai</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" >
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reservations.html">Reservations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hours.html">Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Make a Reservation</h1>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+              <small id="nameHelp" class="form-text text-muted">Please enter your full name.</small>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" class="form-control" id="phone" aria-describedby="phoneHelp">
+              <small id="phoneHelp" class="form-text text-muted">Please enter your phone number.</small>
+            </div>
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <input type="time" class="form-control" id="time">
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <input type="number" class="form-control" id="guests" min="1" max="20">
+            </div>
+            <div class="form-group">
+              <label for="notes">Notes</label>
+              <textarea class="form-control" id="notes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3>Haukai Restaurant</h3>
+              <p>1 Island Street</p>
+              <p>Keri Keri, Bay of Islands, New Zealand</p>
+            </div>
+            <div class="col">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><a href="mailto:haukairestaurant@gmail.com">haukairestaurant@gmail.com</a></li>
+                <li>+64 09 401 4019</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>Copyright © 2022 Haukai Restaurant</p>
+          </div>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+
