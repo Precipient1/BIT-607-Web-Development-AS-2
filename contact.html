@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   	<link rel="stylesheet" href="style.css">
   </head>
   <body class="contact-page">
@@ -38,6 +37,9 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
+           <li class="nav-item">
+            <button class="transparent-btn btn-rounded" id="reservations-btn" type="button" href="reservations.html">Reservations</button>
+          </li>
         </ul>
       </div>
     </nav>
@@ -46,18 +48,22 @@
         <div class="row">
           <div class="col-md-6">
             <div class="contact-page">
-              <h1>Contact Us</h1>
+              <div class="leftcolumn">
+                <div class="card c4">
+                   <h1>Contact Us</h1>
               <div class="contact-info" id="text">
                 <p>Address: 1 Island St, Keri Keri, Bay of Island, New Zealand</p>
                 <p>Phone: 09-401-4019</p>
                 <p>Email: haukairestaurant@gmail.com</p>
               </div>
+                </div>
+              </div>
             </div>
-          </div>
+        </div>
           <div class="col-md-6">
             <div class="map-container" id="map">
-              <iframe width="400" height="275" title="Haukai Retaurant Location" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBYzQ3maGRAvuDdHWQamoOBwhqrqBDaZos&q=Space+Needle,Seattle+WA"></iframe>
-              <div id="map-error"></div>
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9729.026496990979!2d172.63462987612803!3d-43.53451725608305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d318a189a455eef%3A0x87565fdd69de5dde!2sLittle%20High%20Eatery!5e0!3m2!1sen!2snz!4v1670366510448!5m2!1sen!2snz"
+               loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map Locator"></iframe>              <div id="map-error"></div>
               </div>
             </div>
           </div>
@@ -90,6 +96,16 @@
             </div>
           </div>
         </footer>
+        <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3mbMUVmk6zrriBrjRZMqGHLMbP0KpsPE&callback=initMap">
+    </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkclhIGpzlpxefPyJY2_d1cJz_yZwDcO4"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     </body>
 </html>

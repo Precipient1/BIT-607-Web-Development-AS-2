@@ -5,28 +5,13 @@ $(document).ready(function(){
     $("#bg-carousel").carousel();
   });
 
-// Next button
-const nextButton = document.getElementById("next-button");
-nextButton.addEventListener("click", () => {
-  carousel.carousel("next");
-});
-
-// Prev button
-const prevButton = document.getElementById("prev-button");
-prevButton.addEventListener("click", () => {
-  carousel.carousel("prev");
-});
-
-// Pause button
-const pauseButton = document.getElementById("pause-button");
-pauseButton.addEventListener("click", () => {
-  carousel.carousel("pause");
-});
-
-// Play button
-const playButton = document.getElementById("play-button");
-playButton.addEventListener("click", () => {
-  carousel.carousel("cycle");
+$(document).ready(function(){
+  $('.carousel').on('swipeleft', function() {
+    $(this).carousel('next');
+  });
+  $('.carousel').on('swiperight', function() {
+    $(this).carousel('prev');
+  });
 });
 
 document.getElementById("back-to-top").addEventListener("click", function () {
@@ -63,34 +48,26 @@ form.addEventListener("submit", (e) => {
     }
 }
 );
+
 var keriKeriLat = -35.2278;
 var keriKeriLng = 174.3447;
 var keriKeriMarker;
 
-window.addEventListener('load', initMap);
-
+// Initialize and add the map
 function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: keriKeriLat, lng: keriKeriLng},
-    zoom: 15
+  // The location of Uluru
+  const haukai = { lat: keriKeriLat, lng: 174.3447 };
+  // The map, centered at haukai restaurant
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: haukai,
   });
 
-  function handleError(){
-    document.getElementById("map-error").innerHTML = "An error occurred while loading the map. Please try again later.";
-  }
-
-  keriKeriMarker = new google.maps.Marker({
-    position: {lat: keriKeriLat, lng: keriKeriLng},
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: haukai,
     map: map,
-    animation: google.maps.Animation.BOUNCE,
-    icon: "C:\Users\Laptop\OneDrive\Desktop\BIT 607 Web Development AS 2\img\location icon.gif"
   });
-  keriKeriMarker.setTitle("Keri Keri, Bay of Islands, New Zealand");
-  keriKeriMarker.setMap(map);
 }
-google.maps.event.addListener(keriKeriMarker, 'click', function() {
-  var infowindow = new google.maps.InfoWindow({
-    content: "Keri Keri is a small town located in the Bay of Islands, New Zealand. It's known for its beautiful beaches, historic sites, and marine activities."
-  });
-  infowindow.open(map, keriKeriMarker);
-});
+
+window.initMap = initMap;
