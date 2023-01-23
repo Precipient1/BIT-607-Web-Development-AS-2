@@ -14,18 +14,6 @@ $(document).ready(function(){
   });
 });
 
-document.getElementById("back-to-top").addEventListener("click", function () {
-    window.scrollTo(0, 0);
-});
-
-document.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-      document.getElementById("back-to-top").classList.add("show");
-    } else {
-      document.getElementById("back-to-top").classList.remove("show");
-    }
-});
-
 // form validation
 const form = document.getElementById("reservationForm");
 form.addEventListener("submit", (e) => {
