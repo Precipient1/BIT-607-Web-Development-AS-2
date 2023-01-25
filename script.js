@@ -1,4 +1,3 @@
-// Get the carousel element
 const carousel = document.getElementById("bg-carousel");
 
 $(document).ready(function(){
@@ -14,7 +13,22 @@ $(document).ready(function(){
   });
 });
 
-// form validation
+var button = document.getElementById("toggle-button");
+var message = document.getElementById("message");
+
+var messageVisible = false;
+
+button.addEventListener("click", function() {
+  if (messageVisible) {
+    message.style.display = "none";
+    messageVisible = false;
+  } else {
+    message.style.display = "block";
+    messageVisible = true;
+  }
+});
+
+
 const form = document.getElementById("reservationForm");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -59,3 +73,4 @@ function initMap() {
 }
 
 window.initMap = initMap;
+

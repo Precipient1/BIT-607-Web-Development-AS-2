@@ -1,4 +1,3 @@
-/* Global styles */
 body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -13,7 +12,6 @@ body {
   }
 }
 
-/* Styles for screens with a width of 768px or more */
 @media (min-width: 768px) {
   body {
       background-size: cover;
@@ -25,7 +23,7 @@ a {
   color: #ffb03b;}
 
 a:hover {
-  color: #7638cb;
+  color: #555;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,13 +62,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-toggler-icon {
-  float: right;
+  display: inline-block;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .navbar-toggler-icon {
-    float: right;
-  }
+display: inline-block;  }
 }
 
 
@@ -78,7 +75,6 @@ ul {
   list-style-type: none;
 }
 
-/* Home page styles */
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
    width: 100%;
    margin-right: auto;
@@ -106,7 +102,6 @@ img {
   position: absolute;
 }
 
-/* Reservation page styles */
 form {
   margin-top: 50px;
 }
@@ -115,7 +110,6 @@ label {
   font-weight: 600;
 }
 
-/* Contact page styles */
 .map {
   justify-content: space-between;
   display: flex;
@@ -125,7 +119,6 @@ label {
   margin-bottom: 70px;
 }
 
-/* Hours page styles */
 #calendar {
   width: 100%;
   height: 600px;
@@ -140,12 +133,10 @@ label {
   grid-row-gap: 20px;
 }
 
-/* Styles for the hours-page container */
 .hours-page {
   padding: 20px;
 }
 
-/* Styles for the heading */
 .hours-page h1 {
   font-size: 40px;
   color: #ffb03b;
@@ -153,26 +144,24 @@ label {
   margin: 40px;
 }
 
-/* Styles for the unordered list */
 .hours-page ul {
-  list-style-type: none; /* remove bullet points */
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* Styles for the list items */
 .hours-page li {
   font-size: 24px;
   color: #555;
   margin-bottom: 10px;
 }
 
-/* Styles for the note */
 .hours-page p {
   font-size: 18px;
   color: #999;
   text-align: center;
 }
+
 #reservations-btn-1, #reservations-btn-2, #reservations-btn-3, #menu-btn, #menu-btn-1, #menu-btn-2, #menu-btn-3 {
   white-space: nowrap;
   background-color: transparent;
@@ -184,12 +173,13 @@ label {
   text-decoration: none;
   display: flexbox;
   font-size: 18px;
-  margin: 5px 2px;
-  cursor: pointer;
+  margin: 10px 5px;
   opacity: 0.8;
-  color: white;
+  color: #fff;
   width: 30%;
+  padding: 10px;
 }
+
 #reservations-btn {
   white-space: nowrap;
   background-color: transparent;
@@ -219,13 +209,13 @@ label {
 
 @media (max-width: 767px) {
   .carousel-caption h1 {
-      font-size: 28px;
+      font-size: 22px;
   }
   .carousel-caption p {
-      font-size: 18px;
+      font-size: 16px;
   }
   .carousel-caption-container {
-      padding: 10px;
+      padding: 0;
   }
 }
 
@@ -234,7 +224,8 @@ label {
 }
 
 .carousel-slide {
-  object-fit: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel-item {
@@ -243,8 +234,8 @@ width: 100%;
 }
 
 .carousel-inner {
-  margin: auto;
-  padding: auto;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -254,7 +245,11 @@ width: 100%;
   border-radius: 50%;
   background-color: #ccc;
   bottom: 50px;
- }
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 
 .carousel-indicators .active {
   display:flex;
@@ -265,19 +260,34 @@ width: 100%;
   flex-direction: row;
 }
 
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
+
 .carousel-caption {
-  justify-content: space-between;
-  width: 100%;
+display: inline-block;;
+align-self: center;
+  width: 60%;
   height: auto;
    position: relative;
-   font-size: 125%;
+   font-size: 100%;
    bottom: 0;
    left: 0;
-   width: 100%;
-   padding: 15px;
    background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
-  margin-bottom: 7em;
+  padding: 15px;
+  margin-bottom: 4em;
   margin-right: 1em;
 }
 
@@ -296,6 +306,43 @@ width: 100%;
   padding-bottom: 5px;
 }
 
+@media only screen and (min-width: 480px) {
+  .carousel-caption {
+  font-size: 18px;
+  text-align: center;
+  }
+  }
+
+  @media only screen and (min-width: 768px) {
+  .carousel-caption {
+  font-size: 22px;
+  }
+  }
+
+  @media only screen and (min-width: 992px) {
+  .carousel-caption {
+  font-size: 28px;
+  }
+  }
+
+  @media only screen and (min-width: 1200px) {
+  .carousel-caption {
+  font-size: 32px;
+  }
+  }
+
+  @media only screen and (max-width: 480px) {
+  .carousel-caption {
+  font-size: 14px;
+  }
+  }
+
+  @media only screen and (max-width: 320px) {
+  .carousel-caption {
+  font-size: 12px;
+  }
+  }
+
 .p1 {
   margin-top: 40px;
 }
@@ -308,7 +355,6 @@ width: 100%;
   border-color: #ffb03b;
 }
 
-/* Right column */
 .rightcolumn {
   flex-direction: column;
   display: flex;
@@ -402,7 +448,6 @@ width: 100%;
   margin-top: 40px;
 }
 
-/* Footer */
 .footer {
   display: flexbox;
   position: relative;
