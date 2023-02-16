@@ -1,4 +1,9 @@
-AuthUserFile /full/path/to/.htpasswd
-AuthName "Protected Area"
+Options +MultiViews
+RewriteEngine On
+
 AuthType Basic
+AuthName "Private Page"
+AuthUserFile C:\xampp\htdocs\.htpasswd
 Require valid-user
+
+

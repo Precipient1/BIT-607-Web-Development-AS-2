@@ -1,18 +1,255 @@
-/* Flexbox rule 1: align items vertically */
+.body {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  align-content: center;
+  color: #333333;
+  background-color: #f5f5f5;
+}
+@media (max-width: 600px) {
+  body {
+      background-size: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+      background-size: cover;
+  }
+}
+
+.header {
+  background-color: #ffb03b;
+  color: white;
+  padding: 16px;
+  font-weight: bold;
+  font-style: 25px;
+}
+
+.nav-link{
+  font-size: 20px;
+}
+
+.h1 {
+  font-size: 20px;
+  margin: 20px;
+  display: flex;
+}
+
 .container {
     display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+  }
+
+  .form {
+    display: flexbox;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
 
-  /* Flexbox rule 2: distribute elements evenly */
-  .container {
+  .label {
+    margin: 10px 0;
+  }
+
+  .input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .btn-primary{
+    margin: 10px 0px;
+    background-color: transparent;
+    border: 5px solid;
+    border-color: #ffb03b;
+    border-radius: 20px;
+    display: inline;
+    cursor: pointer;
+    opacity: 0.8;
+    color: black;
+    width: 100%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+  .table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .th, .td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  .th {
+    background-color: #f2f2f2;
+  }
+
+.tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.form {
+    margin-bottom: 12px;
     display: flex;
+    flex-direction: column;
+}
+
+.input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.input[type=submit] {
+    background-color: #ffb03b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.input[type=submit]:hover {
+    background-color: #ffb03b;
+}
+
+.button:hover {
+    background-color: #ffb03b;
+}
+
+  .row {
+    display: flexbox;
+  }
+
+  .row header {
+    width: 100%;
+  }
+
+  .cell {
+    display: table;
+    padding: 10px;
+    color: black;
+    margin: 10px;
+  }
+
+  .ul {
+    list-style: none;
+    list-style-type: none;
+  }
+
+  .schedule-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .date {
+    font-weight: bold;
+  }
+
+  .time {
+    font-style: italic;
+  }
+
+  .fakeimg {
+    background-color: #aaa;
+    width: auto;
+    padding: 20px;
+  }
+
+  .card {
+    border-color: #ffb03b;
+    position:relative;
+    padding: 10px;
+    margin:10px;
+    font-size: large;
+    display: inline-block;
+  }
+
+  .c1 {
+    width: 100%;
+  }
+
+  .c5 {
+    width: 99%;
+    margin-left: 5px;
+    margin-top: 40px;
+  }
+
+  .c2 {
+    width: 100%;
+    margin-left: 40px;
+  }
+
+  .card input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .card-title{
+    margin: 30px;
+  }
+
+  .c1{
+    max-width: 100%;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
 
-  /* Flexbox rule 3: set flexible proportions */
-  .container {
+  .leftcolumn {
+    float: left;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 30px;
+    border-color: #ffb03b;
+  }
+
+  .rightcolumn {
+    float: right;
+    flex-direction: column;
     display: flex;
+    width: 30%;
+    background-color: #ffb03b;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .col{
+    flex-direction: row;
+  }
+
+  .copyright{
+    text-align: center;
+  }
+
+  .footer {
+    display: inline-flex;
     flex-wrap: wrap;
+    position: relative;
+    color: #ffb03b;
+    margin-top: 40px;
+    font-family: 'Courgette', cursive;
+    text-align: center;
   }

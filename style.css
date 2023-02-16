@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -18,7 +18,7 @@ body {
   }
 }
 
-a {
+.a {
   text-decoration: none;
   color: #ffb03b;}
 
@@ -34,18 +34,16 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
  background-color: #ffb03b;
  font-family: "Poppins", sans-serif;
- font-size: 20px;
+ font-size: 25px;
  padding: 10px;
 }
 
 .navbar-brand {
   font-family: 'Satisfy', cursive;
   position: relative;
-  width: 100%;
-  height: 100%;
+  font-size: 50px;
   margin-left: 20px;
   text-shadow: #ffb03b;
-  color: #ffb03b;
 }
 
 .navbar {
@@ -71,11 +69,12 @@ display: inline-block;  }
 }
 
 
-ul {
+.ul {
+  list-style: none;
   list-style-type: none;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container, .container-fluid {
    width: 100%;
    margin-right: auto;
   margin-left: auto;
@@ -101,6 +100,25 @@ img {
 .fakeimg-3 {
   position: absolute;
 }
+
+@media (max-width: 576px) {
+  .img-sm {
+    width: 100%;
+  }
+  .img-lg {
+    width: 50%;
+  }
+}
+
+@media (min-width: 576px) {
+  .img-sm {
+    width: 50%;
+  }
+  .img-lg {
+    width: 100%;
+  }
+}
+
 
 form {
   margin-top: 50px;
@@ -178,6 +196,10 @@ label {
   color: #fff;
   width: 30%;
   padding: 10px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 #reservations-btn {
@@ -196,6 +218,10 @@ label {
   opacity: 0.8;
   color: rgb(85, 85, 85);
   width: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 @media (min-width: 768px) {
@@ -364,6 +390,11 @@ align-self: center;
   margin-top: 15px;
   margin-bottom: 30px;
 }
+
+.col{
+  flex-direction: row;
+}
+
 .card-title{
   position: relative;
   margin-top: 0.5em;
@@ -397,6 +428,7 @@ align-self: center;
   margin-bottom: 20px;
   margin-right: 20px;
   max-width: 100%;
+  padding-bottom: 50px;
 }
 
 .c3 {
@@ -411,6 +443,7 @@ align-self: center;
   position: absolute;
   max-width: 100%;
   margin: 0;
+  padding-bottom: 75px;
 }
 
 .r1 {
@@ -437,6 +470,11 @@ align-self: center;
   width: 30%;
   background-color: #ffb03b;
   margin:0;
+}
+
+.r4{
+  display: inline-flexbox;
+  margin-top: 40px;
 }
 
 .course {
